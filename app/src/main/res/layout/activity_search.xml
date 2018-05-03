@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="fr.livelovecite.search.SearchActivity"
+    android:background="#eeeeee">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/my_toolbar"
+        android:background="#eeeeee">
+
+        <fr.livelovecite.slidingtab.PagerSlidingTabStrip
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:background="@color/transparent"
+            app:pstsIndicatorColor="@color/colorPrimary"
+            app:pstsShouldExpand="true"
+            app:pstsTextAllCaps="true"
+            app:pstsUnderlineColor="@color/transparent"
+            app:pstsIndicatorHeight="5dp"
+            android:layout_height="48dp"
+            android:fillViewport="true"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#eeeeee"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:id="@+id/backBTN"
+        android:tint="@android:color/white"
+        android:background="@android:color/transparent"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchText"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@android:color/white"
+        android:textStyle="italic"
+        android:hint="@string/abc_search_hint"
+        android:textColorHint="@android:color/white"
+        android:layout_marginRight="8dp"
+        android:lines="1"
+        android:layout_toRightOf="@+id/backBTN"
+        android:layout_toEndOf="@+id/backBTN"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_alignParentTop="true"/>
+
+</RelativeLayout>

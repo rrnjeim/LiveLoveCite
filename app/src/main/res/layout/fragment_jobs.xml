@@ -1,0 +1,40 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/swipe_refresh_layout2"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp">
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/android:list"
+        android:headerDividersEnabled="false"
+        android:dividerHeight="@dimen/divider_height"
+        android:scrollbars="none"
+        android:layout_gravity="bottom|center_horizontal"
+        android:divider="@android:color/transparent"
+        android:paddingTop="16dp"
+        android:paddingBottom="85dp"
+        android:clipToPadding="false"
+        android:scrollbarStyle="outsideOverlay"/>
+
+</android.support.v4.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/nothingYet"
+        android:textColor="@color/colorAccent"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+</FrameLayout>

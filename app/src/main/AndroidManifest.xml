@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fr.livelovecite">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="fr.livelovecite.permission.C2D_MESSAGE" />
+
+  <permission
+        android:name="fr.livelovecite.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+
+    <application
+        android:allowBackup="true"
+        android:name="io.branch.referral.BranchApp"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <receiver
+            android:name=".push.PushReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="fr.livelovecite" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".push.PushService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false">
+        </service>
+
+        <!-- For Facebook login -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"/>
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="@string/fb_login_protocol_scheme"/>
+            </intent-filter>
+        </activity>
+        <!-- end For Facebook login -->
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!-- Branch init -->
+        <meta-data android:name="io.branch.sdk.BranchKey" android:value="key_live_gpAiwHMYpdqA7urAkj8uymklFFoEgRAD" />
+        <meta-data android:name="io.branch.sdk.BranchKey.test" android:value="key_test_covfwQKZnhwC5uEDii0MOjblxzhvgIzV" />
+
+        <!-- Branch testing (TestMode "true" to simulate fresh installs on dev environment) -->
+        <meta-data android:name="io.branch.sdk.TestMode" android:value="false" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider1579345832392890"
+            android:exported="true" />
+
+        <activity
+            android:name=".login.SplashActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/home"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <!-- Branch URI scheme -->
+            <intent-filter>
+                <data android:scheme="livelovecite" android:host="open" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
+            <!-- Branch App Links -->
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="https" android:host="livelovecite.app.link" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".login.Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".userprofile.ResidentInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.RegistrationActivity"
+            android:label="Sign Up"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".uplaods.UploadEventsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".uplaods.UplaodJobActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".uplaods.UploadItemSellActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".homelists.EventDetailActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="io.branch.sdk.auto_link_request_code"
+                android:value="@integer/AutoDeeplinkRequestCode" />
+            <meta-data
+                android:name="io.branch.sdk.auto_link_keys"
+                android:value="event_detail" />
+        </activity>
+        <activity
+            android:name=".FullscreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".login.CompleteProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".search.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sidemenu.MyHouseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".push.PushActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".push.MaisonAdminLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".userprofile.EditProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.TermsAndConditionsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sidemenu.AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sidemenu.TheatreDeLaCiteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sidemenu.RestaurantsMenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sidemenu.RestoMenuWebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ActivitiesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ActivityDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sidemenu.CiteUnieWebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".push.PushMessagesListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".push.PushMessageDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ads.AdActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".sidemenu.NewAboutUsActivity"
+            android:screenOrientation="portrait"  />
+        <activity android:name=".sidemenu.BiblioActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".sidemenu.SportsActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- Branch install referrer tracking -->
+        <receiver android:name="io.branch.referral.InstallListener" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

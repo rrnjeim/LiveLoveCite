@@ -1,0 +1,200 @@
+{
+  "Maisons": [
+    {
+      "name": "Collège d'Espagne",
+      "geo": "48.818736,2.340810"
+    },
+    {
+      "name": "Collège Franco-britannique",
+      "geo": "48.819203,2.340538"
+    },
+    {
+      "name": "Collège néerlendais",
+      "geo": "48.821852,2.330904"
+    },
+    {
+      "name": "Donation HARAUCOURT",
+      "geo": "48.848572,-2.997698"
+    },
+    {
+      "name": "Espace Sud",
+      "geo": "48.8172567,2.3399394"
+    },
+    {
+      "name": "Fondation ABREU DE GRANCHER",
+      "geo": "48.821238,2.330974"
+    },
+    {
+      "name": "Fondation Argentine",
+      "geo": "48.819938,2.337666"
+    },
+    {
+      "name": "Fondation Avicenne",
+      "geo": "48.818087,2.33503"
+    },
+    {
+      "name": "Fondation BIERMANS-LAPÔTRE",
+      "geo": "48.819385,2.341262"
+    },
+    {
+      "name": "Fondation danoise",
+      "geo": "48.818449,2.342341"
+    },
+    {
+      "name": "Fondation de Monaco",
+      "geo": "48.821433,2.332704"
+    },
+    {
+      "name": "Fondation des États-Unis",
+      "geo": "48.819469,2.339508"
+    },
+    {
+      "name": "Fondation DEUTSCH DE LA MEURTHE",
+      "geo": "48.820187,2.335030"
+    },
+    {
+      "name": "Fondation hellénique",
+      "geo": "48.820861,2.332253"
+    },
+    {
+      "name": "Fondation Lucien PAYE",
+      "geo": "48.820852,2.333188"
+    },
+    {
+      "name": "Fondation suisse",
+      "geo": "48.818315,2.342192"
+    },
+    {
+      "name": "Fondation Victor LYON",
+      "geo": "48.819845,2.336432"
+    },
+    {
+      "name": "Grande Pelouse",
+      "geo": "48.818321,2.337512"
+    },
+    {
+      "name": "Jardin du Monde",
+      "geo": "48.818651,2.335313"
+    },
+    {
+      "name": "L'Oblique",
+      "geo": "48.818082,2.335107"
+    },
+    {
+      "name": "Le Vélo Volant",
+      "geo": "48.81751,2.33785"
+    },
+    {
+      "name": "Maison de l'Asie du Sud Est",
+      "geo": "48.821318,2.330807"
+    },
+    {
+      "name":"Maison de l’Île-de-France",
+      "geo":"48.817058,2.337378"
+    },
+    {
+      "name": "Maison de l'Inde",
+      "geo": "48.818399,2.342861"
+    },
+    {
+      "name": "Maison de l'Italie",
+      "geo": "48.819242,2.342131"
+    },
+    {
+      "name": "Maison de la Tunisie",
+      "geo": "48.821273,2.332889"
+    },
+    {
+      "name": "Maison de Norvège",
+      "geo": "48.817927,2.342645"
+    },
+    {
+      "name": "Maison des Élèves Ingénieurs Arts et Métiers",
+      "geo": "48.817887,2.33332"
+    },
+    {
+      "name": "Maison des Étudiants Arméniens",
+      "geo": "48.821707,2.331203"
+    },
+    {
+      "name": "Maison des Étudiants Canadiens",
+      "geo": "48.820347,2.336620"
+    },
+    {
+      "name": "Maison des Étudiants Suédois",
+      "geo": "48.818511,2.341852"
+    },
+    {
+      "name": "Maison des Industries Agricoles et Alimentaires",
+      "geo": "48.819102,2.342810"
+    },
+    {
+      "name": "Maison des Provinces de France",
+      "geo": "48.821401,2.331802"
+    },
+    {
+      "name": "Maison du Brésil",
+      "geo": "48.817709,2.343649"
+    },
+    {
+      "name": "Maison du Cambodge",
+      "geo": "48.817507,2.336430"
+    },
+    {
+      "name": "Maison du Japon",
+      "geo": "48.818996,2.342276"
+    },
+    {
+      "name": "Maison du Liban",
+      "geo": "48.817432,2.338538"
+    },
+    {
+      "name": "Maison du Maroc",
+      "geo": "48.818761,2.343722"
+    },
+    {
+      "name": "Maison du Mexique",
+      "geo": "48.819420,2.339554"
+    },
+    {
+      "name": "Maison du Portugal - André de GOUVEIA",
+      "geo": "48.817478,2.343336"
+    },
+    {
+      "name": "Maison HEINRICH HEINE",
+      "geo": "48.817897,2.335848"
+    },
+    {
+      "name": "Maison Internationale",
+      "geo": "48.819254,2.338061"
+    },
+    {
+      "name": "Maison Internationale AgroParisTech (MINA)",
+      "geo": "48.819295,2.341536"
+    },
+    {
+      "name": "Pavillon Administratif",
+      "geo": "48.819254,2.338061"
+    },
+    {
+      "name": "Résidence André HONNORAT",
+      "geo": "48.820103,2.338239"
+    },
+    {
+      "name": "Résidence Lila",
+      "geo": "48.879124,2.410122"
+    },
+    {
+      "name": "Résidence Quai de la Loire",
+      "geo": "48.887609,2.379319"
+    },
+    {
+      "name": "Résidence Robert GARRIC",
+      "geo": "48.819594,2.337852"
+    },
+    {
+      "name": "Théâtre de la Cité",
+      "geo": "48.819254,2.338061"
+    }
+  ]
+}

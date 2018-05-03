@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_add"
+          android:title="Add"
+          android:icon="@drawable/fab_add"
+          app:showAsAction="always"/>
+
+    <item android:id="@+id/action_notification_messages"
+          android:title="@string/notice"
+          android:icon="@drawable/ic_admin_message"
+          app:showAsAction="ifRoom"/>
+</menu>

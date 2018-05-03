@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_my_house"
+            android:icon="@drawable/ic_my_house"
+            android:title="@string/my_house" />
+
+        <item
+            android:id="@+id/nav_activities"
+            android:icon="@drawable/ic_activities"
+            android:title="@string/activities" />
+        <item
+            android:id="@+id/nav_go_to"
+            android:icon="@android:drawable/ic_dialog_map"
+            android:title="@string/go_to" />
+
+    </group>
+
+    <item android:title="Info">
+        <menu>
+            <item
+                android:id="@+id/nav_sports"
+                android:icon="@drawable/ic_sports"
+                android:title="@string/sports" />
+            <item
+                android:id="@+id/nav_library"
+                android:icon="@drawable/ic_library"
+                android:title="@string/library" />
+
+            <item android:id="@+id/nav_restaurant_menu" android:icon="@drawable/ic_restaurant_menu"
+                  android:title="Food Time!" />
+            <item android:id="@+id/nav_theatre_cite" android:icon="@drawable/ic_theatre"
+                  android:title="Théâtre de la Cité" />
+        </menu>
+    </item>
+
+    <item android:title="@string/resident_initiatives">
+        <menu>
+            <item android:id="@+id/nav_cite_unie" android:icon="@drawable/ic_action_news"
+            android:title="Cité Unie" />
+            <item android:id="@+id/nav_jardin_du_monde" android:icon="@drawable/ic_action_grow"
+                android:title="Jardin du Monde" />
+            <item android:id="@+id/nav_velo_volant" android:icon="@drawable/ic_bike_mini"
+                android:title="Le Vélo Volant" />
+        </menu>
+    </item>
+
+    <item android:title="Socials">
+        <menu>
+            <item android:id="@+id/nav_facebook" android:icon="@drawable/ic_facebook"
+                android:title="Facebook" />
+            <item android:id="@+id/nav_insta" android:icon="@drawable/ic_instagram"
+                android:title="Instagram" />
+            <item android:id="@+id/nav_snap" android:icon="@drawable/ic_snapchat"
+                  android:title="Snapchat" />
+            <item android:id="@+id/nav_share" android:icon="@drawable/ic_share"
+                android:title="@string/share" />
+        </menu>
+    </item>
+
+    <item android:title="@string/more">
+        <menu>
+            <item
+                android:id="@+id/nav_about_us"
+                android:icon="@drawable/ic_info"
+                android:title="@string/about_us" />
+            <item
+                android:id="@+id/nav_bug_report"
+                android:icon="@drawable/ic_bug_report"
+                android:title="@string/bug_report" />
+        <item android:id="@+id/nav_term_conditions" android:icon="@drawable/ic_terms_conditions"
+              android:title="@string/terms_and_conditions" />
+        </menu>
+    </item>
+
+</menu>

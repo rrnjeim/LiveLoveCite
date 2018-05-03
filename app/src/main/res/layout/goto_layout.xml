@@ -1,0 +1,82 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView6"
+            android:src="@drawable/ic_my_location"
+            android:layout_marginLeft="16dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp"
+            android:tint="@color/colorPrimary"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/maison_arrays"
+            android:prompt="@string/startpoint_prompt"
+            android:id="@+id/FromList"
+            android:spinnerMode="dialog"
+            android:layout_toRightOf="@+id/imageView6"
+            android:layout_marginLeft="16dp"
+            android:layout_alignTop="@+id/imageView6"
+            android:layout_alignBottom="@+id/imageView6"
+            android:gravity="fill_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/maison_arrays"
+            android:prompt="@string/endpoint_prompt"
+            android:id="@+id/ToList"
+            android:layout_alignLeft="@+id/FromList"
+            android:layout_alignStart="@+id/FromList"
+            android:spinnerMode="dialog"
+            android:layout_alignTop="@+id/imageView7"
+            android:layout_alignBottom="@+id/imageView7"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/openGoogleMapsBTN"
+            android:layout_below="@+id/ToList"
+            android:background="@drawable/button_outline_primary"
+            android:text="Go!"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView7"
+            android:src="@drawable/ic_action_location"
+            android:tint="@color/colorPrimary"
+            android:layout_below="@+id/imageView6"
+            android:layout_alignLeft="@+id/imageView6"
+            android:layout_alignStart="@+id/imageView6"
+            android:layout_marginTop="16dp"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

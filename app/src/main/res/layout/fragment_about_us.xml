@@ -1,0 +1,160 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".sidemenu.AboutUsActivity"
+    android:background="@android:color/white">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ralphPP"
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar2"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/default_user_icon"/>
+
+    <TextView
+        android:text="Ralph Noujeim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ralphName"
+        android:layout_below="@+id/ralphPP"
+        android:layout_alignRight="@+id/ralphPP"
+        android:layout_alignEnd="@+id/ralphPP"
+        android:layout_alignLeft="@+id/ralphPP"
+        android:layout_alignStart="@+id/ralphPP"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"/>
+
+    <Button
+        android:id="@+id/ralphContact"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_alignEnd="@+id/ralphName"
+        android:layout_alignLeft="@+id/ralphName"
+        android:layout_alignRight="@+id/ralphName"
+        android:layout_alignStart="@+id/ralphName"
+        android:layout_below="@+id/ralphName"
+        android:background="@drawable/button_outline_primary"
+        android:text="contact"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="normal|bold"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/aliPP"
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/ralphPP"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/default_user_icon"/>
+
+    <TextView
+        android:text="Ali Srour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ralphPP"
+        android:id="@+id/textView11"
+        android:layout_alignLeft="@+id/aliPP"
+        android:layout_alignStart="@+id/aliPP"
+        android:layout_alignRight="@+id/aliPP"
+        android:layout_alignEnd="@+id/aliPP"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"/>
+
+    <Button
+        android:text="Contact"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_below="@+id/textView11"
+        android:id="@+id/aliContact"
+        android:layout_alignLeft="@+id/textView11"
+        android:layout_alignStart="@+id/textView11"
+        android:background="@drawable/button_outline_primary"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:layout_alignRight="@+id/textView11"
+        android:layout_alignEnd="@+id/textView11"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView4"
+        android:layout_alignEnd="@+id/instaBTN"
+        android:layout_alignLeft="@+id/snapBTN"
+        android:layout_alignRight="@+id/instaBTN"
+        android:layout_alignStart="@+id/snapBTN"
+        android:layout_below="@+id/ralphContact"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:scrollbars="vertical"
+        android:text="Live Love Cite is a mobile application for all the residents of the Cité Internationale Universitaire de Paris in which they can post Events, Job Offers and sell their belongings to each other.\nHence, users are able to check the private events in their houses, contact their neighboors and much more."
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fbBTN"
+        android:layout_alignLeft="@+id/ralphPP"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/ralphPP"
+        android:text="Find us on:"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="normal|bold|italic"/>
+
+    <ImageView
+        android:id="@+id/snapBTN"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_alignTop="@+id/fbBTN"
+        android:src="@drawable/snap_logo"/>
+
+    <ImageView
+        android:id="@+id/fbBTN"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        android:src="@drawable/fb_logo"/>
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/instaBTN"
+        android:src="@drawable/insta_logo"
+        android:layout_alignTop="@+id/fbBTN"
+        android:layout_alignRight="@+id/aliContact"
+        android:layout_alignEnd="@+id/aliContact"/>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/background_toolbar_translucent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+</RelativeLayout>

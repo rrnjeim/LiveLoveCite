@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="fr.livelovecite.uplaods.UploadItemSellActivity"
+    >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/frame"
+                android:layout_marginTop="8dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/addItemImage"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_image"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:scaleType="center"/>
+            </FrameLayout>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/addItemTitle"
+                android:hint="@string/title"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_below="@+id/frame"
+                android:layout_marginTop="16dp"
+                android:layout_toLeftOf="@+id/addImageBTN"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textSize="16sp"
+                android:lines="1"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/addImageBTN"
+                android:tint="@color/colorPrimary"
+                android:textColor="@color/colorAccent"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignTop="@+id/addItemTitle"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                app:srcCompat="@drawable/ic_camera"
+                android:background="@color/transparent"/>
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:id="@+id/imageView19"
+                android:tint="@color/colorPrimary"
+                android:src="@drawable/ic_money"
+                android:layout_below="@+id/addImageBTN"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="36dp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/addItemPrice"
+                android:hint="@string/price"
+                android:inputType="numberDecimal"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_alignTop="@+id/imageView19"
+                android:layout_toRightOf="@+id/imageView19"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="16dp"
+                android:textSize="14sp"
+                android:lines="1"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/addItemTags"
+                android:hint="Tags ex: ustensile, knife, couteau.."
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_below="@+id/addItemPrice"
+                android:layout_alignLeft="@+id/addItemPrice"
+                android:layout_alignStart="@+id/addItemPrice"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="16dp"
+                android:textSize="14sp"
+                android:lines="1"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/addItemDescription"
+                android:hint="@string/description"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_below="@+id/showNumberSwitch"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:background="@drawable/button_outline_primary"
+                android:scrollHorizontally="false"
+                android:padding="4dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:id="@+id/imageView25"
+                android:src="@drawable/ic_tags"
+                android:tint="@color/colorPrimary"
+                android:layout_alignTop="@+id/addItemTags"
+                android:layout_toLeftOf="@+id/addItemPrice"
+                android:layout_toStartOf="@+id/addItemPrice"/>
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:id="@+id/imageView29"
+                android:layout_below="@+id/addItemTags"
+                android:layout_toLeftOf="@+id/addItemPrice"
+                android:layout_toStartOf="@+id/addItemPrice"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_call"
+                android:tint="@color/colorPrimary"/>
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/show_phone_number"
+                android:id="@+id/showNumberSwitch"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:textStyle="italic"
+                android:layout_alignBottom="@+id/imageView29"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignLeft="@+id/addItemTags"
+                android:layout_alignStart="@+id/addItemTags"
+                android:checked="true"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white"
+        android:background="@drawable/background_toolbar_translucent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/doneBTN"
+            android:background="@android:color/transparent"
+            android:layout_alignTop="@+id/toolbar"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="16dp"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_action_upload"/>
+
+        <ImageButton
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/deleteBTN"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_delete"
+            android:layout_marginRight="16dp"
+            android:layout_gravity="right"/>
+    </android.support.v7.widget.Toolbar>
+
+
+</RelativeLayout>

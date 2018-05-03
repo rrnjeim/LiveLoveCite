@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent"
+    android:id="@+id/relativeHomeMain">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/ad_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/tabs"
+        android:layout_marginTop="4dp"
+        android:visibility="gone"
+        app:cardBackgroundColor="@android:color/holo_red_dark"
+        app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp">
+
+            <ImageView
+                android:id="@+id/ad_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_offer"/>
+
+            <TextView
+                android:id="@+id/adTitleTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/ad_icon"
+                android:layout_toRightOf="@+id/ad_icon"
+                android:padding="4dp"
+                android:text="@string/loading"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/tram_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ad_card"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/tram_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_tram"
+                android:tint="@android:color/holo_orange_dark"/>
+
+            <TextView
+                android:id="@+id/horraireTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/tram_icon"
+                android:layout_toRightOf="@+id/tram_icon"
+                android:padding="4dp"
+                android:text="@string/loading"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <fr.livelovecite.slidingtab.PagerSlidingTabStrip
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:background="@color/transparent"
+            app:pstsIndicatorColor="@color/colorPrimary"
+            app:pstsShouldExpand="true"
+            app:pstsTextAllCaps="true"
+            app:pstsUnderlineColor="@color/transparent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            app:pstsIndicatorHeight="5dp"
+            android:layout_height="48dp"
+            android:fillViewport="true"/>
+
+
+    <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tram_card"/>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/floatingActionButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom|right"
+        android:clickable="true"
+        android:padding="8dp"
+        fab:layout_anchor="@id/android:list"
+        fab:layout_anchorGravity="bottom|right|end"
+        fab:menu_animationDelayPerItem="80"
+        fab:menu_backgroundColor="@color/black_overlay"
+        fab:menu_colorNormal="@color/colorAccent"
+        fab:menu_colorPressed="@color/colorAccentDark"
+        fab:menu_colorRipple="@color/colorAccent"
+        fab:menu_fab_label="@string/more"
+        fab:menu_icon="@drawable/ic_expand_more"
+        fab:menu_labels_ellipsize="end"
+        fab:menu_labels_singleLine="true"
+        fab:menu_shadowColor="@color/black_overlay"
+        fab:menu_shadowRadius="4dp"
+        fab:menu_shadowXOffset="1dp"
+        fab:menu_shadowYOffset="1dp"
+        fab:menu_showShadow="true"
+        android:focusable="true">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/tramFAB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_tram_mini"
+            fab:fab_colorNormal="@color/colorMiniFab"
+            fab:fab_label="Tram"
+            fab:fab_size="mini"
+            fab:rippleColor="@color/colorAccent"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/velibFAB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_bike_mini"
+            fab:fab_colorNormal="@color/colorMiniFab"
+            fab:fab_label="Vélib'"
+            fab:fab_size="mini"
+            fab:rippleColor="@color/colorAccentDark"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/searchFAB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_search"
+            fab:fab_colorNormal="@color/colorMiniFab"
+            fab:fab_label="@string/search"
+            fab:fab_size="mini"
+            fab:rippleColor="@color/colorAccentDark"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/filterFAB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_sort"
+            fab:fab_colorNormal="@color/colorMiniFab"
+            fab:fab_label="@string/sort_by"
+            fab:fab_size="mini"
+            fab:rippleColor="@color/colorAccentDark"/>
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+</RelativeLayout>

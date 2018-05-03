@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressMy"
+        android:layout_gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="false" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/nothingYet"
+        android:layout_alignTop="@+id/progressMy"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorAccent"
+        android:gravity="center" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@id/android:list"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/addActionBTN"/>
+
+    <Button
+        android:text="@string/add_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addActionBTN"
+        android:textStyle="normal|bold"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_outline_primary"
+        android:layout_marginBottom="4dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

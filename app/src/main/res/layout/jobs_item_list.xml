@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1"
+    android:background="@android:color/white"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardBackgroundColor="@color/cardview_light_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="8dp">
+
+        <Button
+            android:layout_height="8dp"
+            android:layout_above="@+id/jobDescription"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/button3"
+            android:layout_width="8dp"
+            android:background="@android:color/transparent"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/ownerImage2"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/line1"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/default_user_icon"
+            app:border_color="@color/colorAccent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/loading"
+            android:id="@+id/ownerName2"
+            android:textColor="@color/colorPrimary"
+            android:layout_toRightOf="@+id/ownerImage2"
+            android:layout_marginLeft="5dp"
+            android:layout_alignTop="@+id/ownerImage2"
+            android:layout_alignRight="@+id/tvjobTitle"
+            android:layout_alignEnd="@+id/tvjobTitle"
+            android:textSize="14sp"
+            android:textStyle="normal|bold"/>
+
+        <TextView
+            android:id="@+id/jobLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/ownerName2"
+            android:layout_alignLeft="@+id/ownerName2"
+            android:layout_alignRight="@+id/ownerName2"
+            android:layout_alignStart="@+id/ownerName2"
+            android:layout_below="@+id/ownerName2"
+            android:text="@string/loading"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="12sp"/>
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignEnd="@+id/tvjobTitle"
+            android:layout_alignLeft="@+id/tvjobTitle"
+            android:layout_alignRight="@+id/tvjobTitle"
+            android:layout_alignStart="@+id/tvjobTitle"
+            android:layout_below="@id/ownerImage2"
+            android:layout_marginTop="8dp"
+            android:background="#eeeeee"/>
+
+        <FrameLayout
+            android:id="@+id/buzz"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/jobWadge"
+            android:layout_toLeftOf="@+id/button3"
+            android:layout_toStartOf="@+id/button3">
+
+            <ImageView
+                android:id="@+id/jobImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:background="@drawable/ic_image"
+                android:backgroundTint="@color/colorPrimary"/>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvjobTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/line1"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/buzz"
+            android:text="@string/loading"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:textStyle="normal|bold"/>
+
+        <TextView
+            android:id="@+id/jobPublicationDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/jobWadge"
+            android:layout_alignBottom="@+id/jobWadge"
+            android:layout_alignLeft="@+id/tvjobTitle"
+            android:layout_alignStart="@+id/tvjobTitle"
+            android:text="@string/loading"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/backgroundTransparent"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/jobWadge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/tvjobTitle"
+            android:layout_alignRight="@+id/tvjobTitle"
+            android:layout_below="@+id/tvjobTitle"
+            android:layout_toEndOf="@+id/jobPublicationDate"
+            android:layout_toRightOf="@+id/jobPublicationDate"
+            android:text="@string/loading"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/loading"
+            android:id="@+id/jobDescription"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignRight="@+id/ownerName2"
+            android:layout_alignEnd="@+id/ownerName2"
+            android:scrollbars="vertical"
+            android:layout_toEndOf="@+id/button3"
+            android:layout_below="@+id/jobWadge"
+            android:layout_toRightOf="@+id/button3"
+            android:textSize="12sp"
+            android:layout_above="@+id/contactJobButton"/>
+
+        <Button
+            android:id="@+id/contactJobButton"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_alignEnd="@+id/jobDescription"
+            android:layout_alignLeft="@+id/jobWadge"
+            android:layout_alignRight="@+id/jobDescription"
+            android:layout_alignStart="@+id/jobPublicationDate"
+            android:layout_below="@+id/buzz"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_outline_primary"
+            android:gravity="center"
+            android:text="@string/contact"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"/>
+
+        <ImageButton
+            android:id="@+id/reportBTN"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            card_view:srcCompat="@drawable/ic_report"
+            android:tint="@color/colorPrimary"
+            android:background="@color/transparent"
+            android:layout_above="@+id/jobLocation"
+            android:layout_alignRight="@+id/ownerName2"
+            android:layout_alignEnd="@+id/ownerName2"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+

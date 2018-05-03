@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                tools:context=".userprofile.ResidentInfo">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout2"
+        android:layout_alignStart="@+id/linearLayout2"
+        android:orientation="vertical"
+        android:id="@+id/relativeLayout2"
+        android:layout_alignParentTop="true"
+        android:saveEnabled="false"
+        android:fitsSystemWindows="true"
+        android:clipToPadding="true"
+        android:layout_height="180dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/cover"
+            android:fitsSystemWindows="true"
+            android:scaleType="centerCrop"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/myHouseImage"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:id="@+id/user_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_name"
+            android:text="user@host.com"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:layout_alignLeft="@+id/user_name"
+            android:layout_alignStart="@+id/user_name"
+            android:layout_alignRight="@+id/user_name"
+            android:layout_alignEnd="@+id/user_name"/>
+
+        <TextView
+            android:id="@+id/user_maison"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_email"
+            android:text="Maison"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:layout_alignLeft="@+id/user_email"
+            android:layout_alignStart="@+id/user_email"
+            android:layout_alignRight="@+id/user_email"
+            android:layout_alignEnd="@+id/user_email"/>
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_alignTop="@+id/profile_image"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/profile_image"
+            android:layout_toEndOf="@+id/profile_image"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="4dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="115dp"
+            android:layout_height="90dp"
+            android:src="@drawable/default_user_icon"
+            app:border_color="@android:color/white"
+            app:border_width="2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="24dp"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/background_toolbar_translucent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <Button
+            android:layout_height="24dp"
+            android:id="@+id/adminMessageBTN"
+            android:background="@drawable/ic_admin_message"
+            android:layout_gravity="right"
+            android:layout_marginLeft="16dp"
+            android:layout_width="24dp"
+            android:layout_marginRight="16dp"/>
+
+        <Button
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="right"
+            android:id="@+id/editProfileBTN"
+            android:background="@drawable/ic_edit"
+            android:layout_marginRight="8dp"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:app="http://schemas.android.com/apk/res-auto"
+                  android:id="@+id/linearLayout2"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:layout_below="@+id/relativeLayout2">
+
+        <fr.livelovecite.slidingtab.PagerSlidingTabStrip
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@android:color/white"
+            android:fillViewport="false"
+            android:textColor="@color/colorPrimary"
+            app:pstsIndicatorColor="@color/colorPrimary"
+            app:pstsShouldExpand="true"
+            app:pstsTextAllCaps="true"
+            app:pstsUnderlineColor="@color/colorPrimary"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

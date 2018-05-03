@@ -1,0 +1,76 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sidemenu.MyHouseActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/relativeLayout"
+        android:fitsSystemWindows="true"
+        android:background="@android:color/white"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/cover"
+            android:fitsSystemWindows="true"
+            android:scaleType="centerCrop"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/myHouseImage"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:maxHeight="200dp"/>
+
+        <Button
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/contactMaison"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="normal|bold"
+            android:background="@drawable/ic_info"
+            android:layout_alignBottom="@+id/myHouseImage"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="16dp"/>
+
+    </RelativeLayout>
+
+    <fr.livelovecite.slidingtab.PagerSlidingTabStrip
+        android:id="@+id/tabHouse"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@android:color/white"
+        app:pstsShouldExpand="true"
+        app:pstsTextAllCaps="true"
+        app:pstsUnderlineColor="@color/colorPrimary"
+        app:pstsIndicatorColor="@color/colorPrimary"
+        android:textColor="@color/colorPrimary"
+        android:fillViewport="true"
+        android:layout_below="@id/relativeLayout"
+        android:paddingBottom="4dp"/>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpagerHouse"
+        android:fillViewport="true"
+        android:layout_below="@id/tabHouse"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eeeeee"/>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_toolbar_translucent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+</RelativeLayout>

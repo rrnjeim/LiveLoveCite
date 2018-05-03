@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="fr.livelovecite.sidemenu.NewAboutUsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/background_toolbar_translucent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/toolbar">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+        android:id="@+id/about_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/TitleTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/view1"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/view1"
+                android:padding="4dp"
+                android:text="@string/about_us_title"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/TitleTV"
+                android:layout_marginTop="4dp"
+                android:background="#eeeeee" />
+
+            <TextView
+                android:id="@+id/DescriptionTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/view1"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/view1"
+                android:layout_below="@+id/view1"
+                android:padding="4dp"
+                android:text="@string/abous_us_description"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+        android:id="@+id/connect_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/about_card"
+        android:layout_margin="16dp"
+        app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/connectTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/view2"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/view2"
+                android:padding="4dp"
+                android:text="\@LiveLoveCite"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/connectTV"
+                android:layout_margin="4dp"
+                android:background="#eeeeee" />
+
+            <ImageView
+                android:id="@+id/snapBTN"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignLeft="@+id/view2"
+                android:layout_alignStart="@+id/view2"
+                android:layout_below="@+id/view2"
+                android:src="@drawable/snap_logo" />
+
+            <ImageView
+                android:id="@+id/fbBTN"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="8dp"
+                android:src="@drawable/fb_logo"/>
+
+            <ImageView
+                android:id="@+id/instaBTN"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignEnd="@+id/view2"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/view2"
+                android:src="@drawable/insta_logo" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/cite_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/connect_card"
+            android:layout_margin="16dp"
+            app:cardElevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/citeTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/view3"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/view3"
+                    android:padding="4dp"
+                    android:text="\@ciup_fr"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/citeTV"
+                    android:layout_margin="4dp"
+                    android:background="#eeeeee" />
+               <LinearLayout
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@id/view3"
+                   android:layout_margin="8dp"
+                   android:baselineAligned="false"
+                   android:orientation="horizontal"
+                   android:gravity="center"
+                   android:weightSum="6">
+
+                   <ImageView
+                        android:id="@+id/cite_fbBTN"
+                        android:layout_width="0dp"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/fb_logo" />
+
+
+                    <ImageView
+                        android:id="@+id/cite_twBTN"
+                        android:layout_width="0dp"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/tw_logo" />
+
+                    <ImageView
+                        android:id="@+id/cite_ytBTN"
+                        android:layout_width="0dp"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/yt_logo" />
+
+                    <ImageView
+                        android:id="@+id/cite_liBTN"
+                        android:layout_width="0dp"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/li_logo" />
+
+                    <ImageView
+                        android:id="@+id/cite_instaBTN"
+                        android:layout_width="0dp"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/insta_logo" />
+               </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

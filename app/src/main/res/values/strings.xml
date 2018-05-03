@@ -1,0 +1,565 @@
+<resources>
+    <string name="app_name" translatable="false">Live Love Cité</string>
+    <string name="facebook_app_id" translatable="false">1579345832392890</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb1579345832392890</string>
+    <string name="email">Email</string>
+
+    <string-array name="maison_arrays" translatable="false">
+        <item>@string/maison_prompt</item>
+        <item>"Collège d'Espagne"</item>
+        <item>Collège Franco-britannique</item>
+        <item>Collège néerlendais</item>
+        <item>Donation HARAUCOURT</item>
+        <item>Fondation ABREU DE GRANCHER</item>
+        <item>Fondation Argentine</item>
+        <item>Fondation Avicenne</item>
+        <item>Fondation BIERMANS-LAPÔTRE</item>
+        <item>Fondation danoise</item>
+        <item>Fondation de Monaco</item>
+        <item>Fondation des États-Unis</item>
+        <item>Fondation DEUTSCH DE LA MEURTHE</item>
+        <item>Fondation hellénique</item>
+        <item>Fondation Lucien PAYE</item>
+        <item>Fondation suisse</item>
+        <item>Fondation Victor LYON</item>
+        <item>"Maison de l'Asie du Sud Est"</item>
+        <item>"Maison de l’Île-de-France"</item>
+        <item>"Maison de l'Inde"</item>
+        <item>"Maison de l'Italie"</item>
+        <item>Maison de la Tunisie</item>
+        <item>Maison de Norvège</item>
+        <item>Maison des Élèves Ingénieurs Arts et Métiers</item>
+        <item>Maison des Étudiants Arméniens</item>
+        <item>Maison des Étudiants Canadiens</item>
+        <item>Maison des Étudiants Suédois</item>
+        <item>Maison des Industries Agricoles et Alimentaires</item>
+        <item>Maison des Provinces de France</item>
+        <item>Maison du Brésil</item>
+        <item>Maison du Cambodge</item>
+        <item>Maison du Japon</item>
+        <item>Maison du Liban</item>
+        <item>Maison du Maroc</item>
+        <item>Maison du Mexique</item>
+        <item>Maison du Portugal - André de GOUVEIA</item>
+        <item>Maison HEINRICH HEINE</item>
+        <item>Maison Internationale AgroParisTech (MINA)</item>
+        <item>Pavillon Administratif</item>
+        <item>Résidence André HONNORAT</item>
+        <item>Résidence Lila</item>
+        <item>Résidence Quai de la Loire</item>
+        <item>Résidence Robert GARRIC</item>
+        <item>Not a Resident</item>
+    </string-array>
+
+    <string-array name="maison_arrays_mylocation" translatable="false">
+        <item>@string/startpoint_prompt</item>
+        <item>"Collège d'Espagne"</item>
+        <item>Collège Franco-britannique</item>
+        <item>Collège néerlendais</item>
+        <item>Donation HARAUCOURT</item>
+        <item>Espace Sud</item>
+        <item>Fondation ABREU DE GRANCHER</item>
+        <item>Fondation Argentine</item>
+        <item>Fondation Avicenne</item>
+        <item>Fondation BIERMANS-LAPÔTRE</item>
+        <item>Fondation danoise</item>
+        <item>Fondation de Monaco</item>
+        <item>Fondation des États-Unis</item>
+        <item>Fondation DEUTSCH DE LA MEURTHE</item>
+        <item>Fondation hellénique</item>
+        <item>Fondation Lucien PAYE</item>
+        <item>Fondation suisse</item>
+        <item>Fondation Victor LYON</item>
+        <item>Grande Pelouse</item>
+        <item>Jardin du Monde</item>
+        <item>"L'Oblique"</item>
+        <item>Le Vélo Volant</item>
+        <item>"Maison de l'Asie du Sud Est"</item>
+        <item>"Maison de l’Île-de-France"</item>
+        <item>"Maison de l'Inde"</item>
+        <item>"Maison de l'Italie"</item>
+        <item>Maison de la Tunisie</item>
+        <item>Maison de Norvège</item>
+        <item>Maison des Élèves Ingénieurs Arts et Métiers</item>
+        <item>Maison des Étudiants Arméniens</item>
+        <item>Maison des Étudiants Canadiens</item>
+        <item>Maison des Étudiants Suédois</item>
+        <item>Maison des Industries Agricoles et Alimentaires</item>
+        <item>Maison des Provinces de France</item>
+        <item>Maison du Brésil</item>
+        <item>Maison du Cambodge</item>
+        <item>Maison du Japon</item>
+        <item>Maison du Liban</item>
+        <item>Maison du Maroc</item>
+        <item>Maison du Mexique</item>
+        <item>Maison du Portugal - André de GOUVEIA</item>
+        <item>Maison HEINRICH HEINE</item>
+        <item>Maison Internationale</item>
+        <item>Maison Internationale AgroParisTech (MINA)</item>
+        <item>Résidence André HONNORAT</item>
+        <item>Résidence Lila</item>
+        <item>Résidence Quai de la Loire</item>
+        <item>Résidence Robert GARRIC</item>
+        <item>Théâtre de la Cité</item>
+        <item>Ancien Résident</item>
+    </string-array>
+
+    <string-array name="locations_array" translatable="false">
+        <item>@string/select_location</item>
+        <item>"Collège d'Espagne"</item>
+        <item>Collège Franco-britannique</item>
+        <item>Collège néerlendais</item>
+        <item>Donation HARAUCOURT</item>
+        <item>Espace Sud</item>
+        <item>Fondation ABREU DE GRANCHER</item>
+        <item>Fondation Argentine</item>
+        <item>Fondation Avicenne</item>
+        <item>Fondation BIERMANS-LAPÔTRE</item>
+        <item>Fondation danoise</item>
+        <item>Fondation de Monaco</item>
+        <item>Fondation des États-Unis</item>
+        <item>Fondation DEUTSCH DE LA MEURTHE</item>
+        <item>Fondation hellénique</item>
+        <item>Fondation Lucien PAYE</item>
+        <item>Fondation suisse</item>
+        <item>Fondation Victor LYON</item>
+        <item>Grande Pelouse</item>
+        <item>Jardin du Monde</item>
+        <item>"L'Oblique"</item>
+        <item>Le Vélo Volant</item>
+        <item>"Maison de l'Asie du Sud Est"</item>
+        <item>"Maison de l’Île-de-France"</item>
+        <item>"Maison de l'Inde"</item>
+        <item>"Maison de l'Italie"</item>
+        <item>Maison de la Tunisie</item>
+        <item>Maison de Norvège</item>
+        <item>Maison des Élèves Ingénieurs Arts et Métiers</item>
+        <item>Maison des Étudiants Arméniens</item>
+        <item>Maison des Étudiants Canadiens</item>
+        <item>Maison des Étudiants Suédois</item>
+        <item>Maison des Industries Agricoles et Alimentaires</item>
+        <item>Maison des Provinces de France</item>
+        <item>Maison du Brésil</item>
+        <item>Maison du Cambodge</item>
+        <item>Maison du Japon</item>
+        <item>Maison du Liban</item>
+        <item>Maison du Maroc</item>
+        <item>Maison du Mexique</item>
+        <item>Maison du Portugal - André de GOUVEIA</item>
+        <item>Maison HEINRICH HEINE</item>
+        <item>Maison Internationale</item>
+        <item>Maison Internationale AgroParisTech (MINA)</item>
+        <item>Résidence André HONNORAT</item>
+        <item>Résidence Lila</item>
+        <item>Résidence Quai de la Loire</item>
+        <item>Résidence Robert GARRIC</item>
+        <item>Théâtre de la Cité</item>
+    </string-array>
+
+    <string-array name="countriesList" translatable="false">
+        <item>@string/nationality_prompt</item>
+        <item>Afghanistan</item>
+        <item>Albania</item>
+        <item>Algeria</item>
+        <item>American Samoa</item>
+        <item>Andorra</item>
+        <item>Angola</item>
+        <item>Antigua and Barbuda</item>
+        <item>Argentina</item>
+        <item>Armenia</item>
+        <item>Aruba</item>
+        <item>Australia</item>
+        <item>Austria</item>
+        <item>Azerbaijan</item>
+        <item>Bahamas</item>
+        <item>Bahrain</item>
+        <item>Bangladesh</item>
+        <item>Barbados</item>
+        <item>Belarus</item>
+        <item>Belgium</item>
+        <item>Belize</item>
+        <item>Benin</item>
+        <item>Bermuda</item>
+        <item>Bhutan</item>
+        <item>Bolivia</item>
+        <item>Bosnia and Herzegovina</item>
+        <item>Botswana</item>
+        <item>Brazil</item>
+        <item>British Virgin Islands</item>
+        <item>Brunei</item>
+        <item>Bulgaria</item>
+        <item>Burkina Faso</item>
+        <item>Burundi</item>
+        <item>Cambodia</item>
+        <item>Cameroon</item>
+        <item>Canada</item>
+        <item>Canary Islands</item>
+        <item>Cape Verde</item>
+        <item>Cayman Islands</item>
+        <item>Central African Republic</item>
+        <item>Ceuta and Melilla</item>
+        <item>Chad</item>
+        <item>Chile</item>
+        <item>China</item>
+        <item>Colombia</item>
+        <item>Comoros</item>
+        <item>Congo [DRC]</item>
+        <item>Congo [Republic]</item>
+        <item>Costa Rica</item>
+        <item>Croatia</item>
+        <item>Cuba</item>
+        <item>Curaçao</item>
+        <item>Cyprus</item>
+        <item>Czech Republic</item>
+        <item>Côte d’Ivoire</item>
+        <item>Denmark</item>
+        <item>Djibouti</item>
+        <item>Dominica</item>
+        <item>Dominican Republic</item>
+        <item>Ecuador</item>
+        <item>Egypt</item>
+        <item>El Salvador</item>
+        <item>Equatorial Guinea</item>
+        <item>Eritrea</item>
+        <item>Estonia</item>
+        <item>Ethiopia</item>
+        <item>Faroe Islands</item>
+        <item>Fiji</item>
+        <item>Finland</item>
+        <item>France</item>
+        <item>French Guiana</item>
+        <item>French Polynesia</item>
+        <item>Gabon</item>
+        <item>Gambia</item>
+        <item>Georgia</item>
+        <item>Germany</item>
+        <item>Ghana</item>
+        <item>Gibraltar</item>
+        <item>Greece</item>
+        <item>Greenland</item>
+        <item>Grenada</item>
+        <item>Guadeloupe</item>
+        <item>Guam</item>
+        <item>Guatemala</item>
+        <item>Guernsey</item>
+        <item>Guinea</item>
+        <item>Guinea-Bissau</item>
+        <item>Guyana</item>
+        <item>Haiti</item>
+        <item>Honduras</item>
+        <item>Hong Kong</item>
+        <item>Hungary</item>
+        <item>Iceland</item>
+        <item>India</item>
+        <item>Indonesia</item>
+        <item>Iran</item>
+        <item>Iraq</item>
+        <item>Ireland</item>
+        <item>Isle of Man</item>
+        <item>Israel</item>
+        <item>Italy</item>
+        <item>Jamaica</item>
+        <item>Japan</item>
+        <item>Jersey</item>
+        <item>Jordan</item>
+        <item>Kazakhstan</item>
+        <item>Kenya</item>
+        <item>Kiribati</item>
+        <item>Kuwait</item>
+        <item>Kyrgyzstan</item>
+        <item>Laos</item>
+        <item>Latvia</item>
+        <item>Lebanon</item>
+        <item>Lesotho</item>
+        <item>Liberia</item>
+        <item>Libya</item>
+        <item>Liechtenstein</item>
+        <item>Lithuania</item>
+        <item>Luxembourg</item>
+        <item>Macau</item>
+        <item>Macedonia [FYROM]</item>
+        <item>Madagascar</item>
+        <item>Malawi</item>
+        <item>Malaysia</item>
+        <item>Mali</item>
+        <item>Malta</item>
+        <item>Marshall Islands</item>
+        <item>Martinique</item>
+        <item>Mauritania</item>
+        <item>Mauritius</item>
+        <item>Mayotte</item>
+        <item>Mexico</item>
+        <item>Micronesia</item>
+        <item>Moldova</item>
+        <item>Monaco</item>
+        <item>Mongolia</item>
+        <item>Montenegro</item>
+        <item>Morocco</item>
+        <item>Mozambique</item>
+        <item>Myanmar [Burma]</item>
+        <item>Namibia</item>
+        <item>Nepal</item>
+        <item>Netherlands</item>
+        <item>New Caledonia</item>
+        <item>New Zealand</item>
+        <item>Nicaragua</item>
+        <item>Niger</item>
+        <item>Nigeria</item>
+        <item>North Korea</item>
+        <item>Northern Mariana Islands</item>
+        <item>Norway</item>
+        <item>Oman</item>
+        <item>Pakistan</item>
+        <item>Palau</item>
+        <item>Palestine</item>
+        <item>Panama</item>
+        <item>Papua New Guinea</item>
+        <item>Paraguay</item>
+        <item>Peru</item>
+        <item>Philippines</item>
+        <item>Poland</item>
+        <item>Portugal</item>
+        <item>Puerto Rico</item>
+        <item>Qatar</item>
+        <item>Romania</item>
+        <item>Russia</item>
+        <item>Rwanda</item>
+        <item>Réunion</item>
+        <item>Saint Barthélemy</item>
+        <item>Saint Kitts and Nevis</item>
+        <item>Saint Lucia</item>
+        <item>Saint Martin</item>
+        <item>Saint Vincent and the Grenadines</item>
+        <item>Samoa</item>
+        <item>San Marino</item>
+        <item>Saudi Arabia</item>
+        <item>Senegal</item>
+        <item>Serbia</item>
+        <item>Seychelles</item>
+        <item>Sierra Leone</item>
+        <item>Singapore</item>
+        <item>Sint Maarten</item>
+        <item>Slovakia</item>
+        <item>Slovenia</item>
+        <item>Solomon Islands</item>
+        <item>Somalia</item>
+        <item>South Africa</item>
+        <item>South Korea</item>
+        <item>South Sudan</item>
+        <item>Spain</item>
+        <item>Sri Lanka</item>
+        <item>Sudan</item>
+        <item>Suriname</item>
+        <item>Swaziland</item>
+        <item>Sweden</item>
+        <item>Switzerland</item>
+        <item>Syria</item>
+        <item>São Tomé and Príncipe</item>
+        <item>Taiwan</item>
+        <item>Tanzania</item>
+        <item>Thailand</item>
+        <item>Timor-Leste</item>
+        <item>Togo</item>
+        <item>Tonga</item>
+        <item>Trinidad and Tobago</item>
+        <item>Tunisia</item>
+        <item>Turkey</item>
+        <item>Turks and Caicos Islands</item>
+        <item>U.S. Outlying Islands</item>
+        <item>U.S. Virgin Islands</item>
+        <item>Uganda</item>
+        <item>Ukraine</item>
+        <item>United Arab Emirates</item>
+        <item>United Kingdom</item>
+        <item>United States</item>
+        <item>Uruguay</item>
+        <item>Uzbekistan</item>
+        <item>Vanuatu</item>
+        <item>Venezuela</item>
+        <item>Vietnam</item>
+        <item>Western Sahara</item>
+        <item>XA</item>
+        <item>Yemen</item>
+        <item>Zambia</item>
+        <item>Zimbabwe</item>
+        <item>Åland Islands</item>
+    </string-array>
+
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string-array name="navigation_drawer_items_array" translatable="false">
+        <item>Home</item>
+        <item>Participating in</item>
+        <item>My House</item>
+        <item>Go To</item>
+        <item>About Us</item>
+    </string-array>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="upcoming_events">Upcoming</string>
+    <string name="job_offers">Job Offers</string>
+    <string name="market">Market</string>
+    <string name="no_account_yet">No account yet? Register now</string>
+    <string name="logging_in">Logging in…</string>
+    <string name="successfully_registered">Email confirmation sent</string>
+    <string name="passwords_unmatch">Passwords do not match!</string>
+    <string name="creating_account">Creating account…</string>
+    <string name="name">Name</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="mobile_number_optional">Mobile Number (hidden)</string>
+    <string name="no_connection">No internet connection</string>
+    <string name="loading">Loading…</string>
+    <string name="name_required">Name required</string>
+    <string name="email_required">Email required</string>
+    <string name="inavlid_email">Invalid email address</string>
+    <string name="password_required">password required</string>
+    <string name="house_required">House required</string>
+    <string name="cannot_logout">Could not Log out!</string>
+    <string name="working">Working…</string>
+    <string name="logging_out">Logging out</string>
+    <string name="you">You</string>
+    <string name="are_going">are going</string>
+    <string name="password">Password</string>
+    <string name="or">OR</string>
+    <string name="login">Login</string>
+    <string name="my_profile">My Profile</string>
+    <string name="about_us">About Us</string>
+    <string name="go_to">Go To</string>
+    <string name="no_events_yet">No events yet</string>
+    <string name="no_jobs_yet">No jobs yet</string>
+    <string name="no_items_yet">No items yet</string>
+    <string name="register">Register</string>
+    <string name="signup">Signup</string>
+    <string name="details">Details</string>
+    <string name="add_event">Add Event</string>
+    <string name="add_job">Add Job</string>
+    <string name="add_item_to_sell">Add Item to Sell</string>
+    <string name="logout">Logout</string>
+    <string name="my_house">My House</string>
+    <string name="home">Feeds</string>
+    <string name="share">Share</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="are_you_sure">Are you sure you want to exit?</string>
+    <string name="new_job_offer">New Job Offer</string>
+    <string name="new_event">New Event</string>
+    <string name="new_item">New Item</string>
+    <string name="edit_item">Edit Item</string>
+    <string name="edit_event">Edit Event</string>
+    <string name="edit_job">Edit Job Offer</string>
+    <string name="notice">Notifications</string>
+    <string name="newly_added">Newly Added</string>
+    <string name="most_popular">Most Popular</string>
+    <string name="sort_by">Sort by</string>
+    <string name="nationality_required">Nationality Required</string>
+    <string name="participating_in">Participating in</string>
+
+    <string name="title_activity_fullscreen" translatable="false">FullscreenActivity</string>
+
+    <string name="finsih">Finish</string>
+    <string name="number_required">Number required</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="send_email">Send Email</string>
+    <string name="no_neighboors_yet">No neighboors yet</string>
+    <string name="and">and</string>
+    <string name="search">Search…</string>
+    <string name="cannot_connect_facebook">Could not connect with Facebook</string>
+    <string name="send_sms">Send SMS ?</string>
+    <string name="call">Call ?</string>
+    <string name="add_calendar">Add to Calendar</string>
+    <string name="no_results">No results</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="change_password">Change Password</string>
+    <string name="no_messages">No messages yet</string>
+    <string name="my_events">My Events</string>
+    <string name="participate">Participate</string>
+    <string name="terms_and_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="bug_report">Bug Report</string>
+    <string name="complete_profile">Complete Profile</string>
+    <string name="retry">Reload</string>
+    <string name="entrance_fee">Entrance fee</string>
+    <string name="price">€ Price</string>
+    <string name="public_event">Public</string>
+    <string name="private_event">Private</string>
+    <string name="price_for_exteriors">€ Price for exteriors</string>
+    <string name="description">Description…</string>
+    <string name="title">Title</string>
+    <string name="show_phone_number">Share phone number</string>
+    <string name="remuneration">Remuneration</string>
+    <string name="are_going_with_me">are going</string>
+    <string name="delete_event">Delete Event</string>
+    <string name="delete_joboffer">Delete Job Offer</string>
+    <string name="delete_item">Delete Item</string>
+    <string name="select_image">Select Image</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="update_event">Update event</string>
+    <string name="update_joboffer">Update job offer</string>
+    <string name="update_item">Update Item</string>
+    <string name="select_from">Select from…</string>
+    <string name="camera">Camera</string>
+    <string name="galerie">Gallery</string>
+    <string name="waiting_approval">Waiting approval</string>
+    <string name="select_location">Select Location</string>
+    <string name="startpoint_prompt">My Location</string>
+    <string name="deleting_image">Deleting image</string>
+    <string name="updating_image">Updating image</string>
+    <string name="uploading_info">Uploading info</string>
+    <string name="uploading_image">Uploading image</string>
+    <string name="required">required</string>
+    <string name="image_required">Image required</string>
+    <string name="invalid_date_time"><![CDATA[Invalid date & time!]]></string>
+    <string name="location_missing">Missing Location!</string>
+    <string name="deleting_event">Deleting event</string>
+    <string name="nationality_prompt">Select Nationality</string>
+    <string name="maison_prompt">Choose your House</string>
+    <string name="endpoint_prompt">Choose Destination</string>
+    <string name="address">Address</string>
+    <string name="deleting_job">Deleting job offer</string>
+    <string name="deleting_item">Deleting item</string>
+    <string name="updating_info">Updating info</string>
+    <string name="report_sent">Report Sent</string>
+    <string name="report">Report</string>
+    <string name="report_content">Report content</string>
+    <string name="report_user">Report user</string>
+    <string name="why">Why ?</string>
+    <string name="activities"><![CDATA[Courses & Activities]]></string>
+    <string name="no_activities_yet" translatable="false">:(</string>
+    <string name="restaurants_menu">Menus</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="contact">Contact</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="hide">Hide</string>
+    <string name="more">More</string>
+    <string name="i_have_read_and_agree_to_terms_and_conditions" translatable="false">I have read and agree to Terms and Conditions</string>
+    <string name="library">Library</string>
+    <string name="sports">Sports</string>
+    <string name="about_us_title" translatable="false">« Live Love Cité » : l’appli des résidents de la Cité internationale !</string>
+    <string name="abous_us_description" translatable="false">
+        La Cité internationale universitaire de Paris a à cœur d’offrir à ses étudiants, chercheurs, artistes et sportifs du monde entier une expérience unique favorisant durant leur séjour l’intégration et les échanges.
+        \n<b>« Live Love Cité »</b> est une communauté qui permet aux résidents de la Cité internationale de rester informés de tout ce qui se passe sur le campus :
+        \n<b>• Un agenda collaboratif :</b> partagez et suivez les événements organisés sur le campus (expositions, projections, concerts, conférences, soirées étudiantes, etc.)
+        \n<b>• Jobs étudiants :</b> consultez et publiez des offres d’emploi, petites annonces et autres bons plans jobs
+        \n<b>• La brocante de la Cité internationale :</b> l’application vous permet de vendre et d’acheter des objets à petits prix
+        \n• Maximisez votre temps en consultant les horaires des prochains Tram 3 en temps réel
+        \n• Découvrir les menus gourmands des différents restaurants et cantines
+        \n• Informez-vous sur les actualités et informations importantes du Service des sports et de la bibliothèque de la Maison internationale
+        \n• Restez à l’affut des dernières initiatives des résidents en consultant les pages dédiées : « Cité Unie », « Vélo Volant », « Jardin du Monde », etc.
+
+        \n\n#LiveLoveCite</string>
+    <string name="biblio_description" translatable="false">
+        Ouverte 7 jours sur 7 pendant l’année universitaire (10h à 22h en semaine, 13h à 19h le week-end), la Bibliothèque de la Cité internationale est accessible à tous les publics (gratuite pour les résidents sur présentation d’un justificatif de résidence, payante pour les autres).
+        \n\nElle propose des collections axées sur la culture française qui sont composées de 50 000 livres, 360 000 e-books, 8 600 périodiques et 57 bases de données : http://www.ciup.fr/bibliotheque
+        \n\nElle offre un ensemble de services favorisant le travail universitaire : internet, service de reprographie, formation des usagers à la recherche documentaire, laboratoire de langues avec cours de français et groupes de conversation en français (tous les jours), anglais, espagnol, russe, italien, chinois.</string>
+    <string name="sports_description" translatable="false">
+        La Cité internationale propose à ses résidents plus de 50 activités sportives à des tarifs préférentiels.
+        \n\nElle met à disposition des résidents des infrastructures multiples : piscine, salle de musculation, courts de tennis, dojo, salle de danse, salle d’escrime, tables de ping pong et 1 terrain de football en synthétique ainsi que l’ensemble du matériel indispensable.
+        \nPour cette année 2017-2018, deux programmes thématiques sont proposés : <b>Actisport Libre et Actisport Encadré</b>.
+        \nEn pratique libre ou encadrée par un enseignant, avec la possibilité de s’inscrire à des activités optionnelles. L’inscription est annuelle, semestrielle, trimestrielle ou mensuelle selon le programme.
+        \n\nLe service des sports propose également plusieurs tournois dont le tournoi inter-fondations qui oppose durant une année universitaire, des résidents défendant les couleurs de leur maison dans différentes disciplines.
+    </string>
+    <string name="resident_initiatives">Resident Initiatives</string>
+    <string name="save">Save</string>
+</resources>
+

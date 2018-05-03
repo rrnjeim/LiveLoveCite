@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="4dp"
+    android:background="@android:color/white"
+    app:cardBackgroundColor="@color/cardview_light_background"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/ownerImage"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignLeft="@+id/line1"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/line1"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/default_user_icon"
+            app:border_color="@color/colorAccent"/>
+
+        <TextView
+            android:id="@+id/ownerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ownerImage"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/ownerImage"
+            android:gravity="center_vertical"
+            android:text="@string/loading"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="normal|bold"/>
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tveventLocation"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@android:color/white"/>
+
+        <RelativeLayout
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/line1"
+            android:layout_marginTop="4dp">
+
+            <ImageView
+                android:id="@+id/progressBar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_image"
+                android:tint="@color/colorPrimary"/>
+
+            <ImageView
+                android:id="@+id/eventImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_launcher"/>
+
+            <TextView
+                android:id="@+id/tveventTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@color/backgroundTransparent"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="@string/loading"
+                android:textAlignment="viewStart"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="normal|bold"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvGoing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/line1"
+            android:layout_alignRight="@+id/line1"
+            android:layout_below="@+id/frame"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/loading"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="italic"/>
+
+        <ImageButton
+            android:id="@+id/CalendarBTN"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignTop="@+id/ShareBTN"
+            android:layout_marginRight="36dp"
+            android:layout_toLeftOf="@+id/ShareBTN"
+            android:layout_toStartOf="@+id/ShareBTN"
+            android:background="@color/transparent"
+            android:tint="@color/colorPrimary"
+            app:srcCompat="@drawable/ic_calendar_add"/>
+
+
+        <ImageButton
+            android:id="@+id/ShareBTN"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignEnd="@+id/tvGoing"
+            android:layout_alignRight="@+id/tvGoing"
+            android:layout_below="@+id/eventMonth"
+            android:layout_marginTop="4dp"
+            android:background="@color/transparent"
+            android:tint="@color/colorPrimary"
+            app:srcCompat="@drawable/ic_share"/>
+
+        <ImageButton
+            android:id="@+id/GoingBTN"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignTop="@+id/CalendarBTN"
+            android:layout_marginRight="36dp"
+            android:layout_toLeftOf="@+id/CalendarBTN"
+            android:layout_toStartOf="@+id/CalendarBTN"
+            android:background="@drawable/ic_star_notgoing"/>
+
+        <ImageButton
+            android:id="@+id/reportBTN"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/ownerName"
+            android:backgroundTint="@color/transparent"
+            android:tint="@color/colorPrimary"
+            app:srcCompat="@drawable/ic_report"/>
+
+        <TextView
+            android:id="@+id/tveventLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView9"
+            android:layout_below="@+id/ownerName"
+            android:layout_toEndOf="@+id/imageView9"
+            android:layout_toRightOf="@+id/imageView9"
+            android:gravity="center_vertical"
+            android:text="@string/loading"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/eventDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignLeft="@+id/line1"
+            android:layout_alignStart="@+id/line1"
+            android:layout_below="@+id/eventMonth"
+            android:layout_toLeftOf="@+id/tveventLocation"
+            android:layout_toStartOf="@+id/tveventLocation"
+            android:gravity="center"
+            android:text="30"
+            android:textColor="@color/colorPrimary"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/eventMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/eventDay"
+            android:layout_alignLeft="@+id/eventDay"
+            android:layout_alignRight="@+id/eventDay"
+            android:layout_alignStart="@+id/eventDay"
+            android:layout_alignTop="@+id/tvGoing"
+            android:gravity="center"
+            android:text="MAR."
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignLeft="@+id/ownerName"
+            android:layout_alignStart="@+id/ownerName"
+            android:layout_below="@+id/ownerName"
+            android:tint="@color/colorPrimary"
+            app:srcCompat="@drawable/ic_action_location"/>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
