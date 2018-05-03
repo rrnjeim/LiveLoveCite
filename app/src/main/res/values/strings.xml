@@ -1,7 +1,4 @@
 <resources>
-    <string name="app_name" translatable="false">Live Love Cité</string>
-    <string name="facebook_app_id" translatable="false">1579345832392890</string>
-    <string name="fb_login_protocol_scheme" translatable="false">fb1579345832392890</string>
     <string name="email">Email</string>
 
     <string-array name="maison_arrays" translatable="false">
